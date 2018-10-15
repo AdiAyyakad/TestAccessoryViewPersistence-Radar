@@ -49,6 +49,7 @@
 		48E70C732174D024006CB873 /* TestAccessoryViewPersistenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAccessoryViewPersistenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E70C772174D024006CB873 /* TestAccessoryViewPersistenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccessoryViewPersistenceUITests.swift; sourceTree = "<group>"; };
 		48E70C792174D024006CB873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E70C862174E6D9006CB873 /* TestAccessoryViewPersistence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestAccessoryViewPersistence.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		48E70C542174D023006CB873 /* TestAccessoryViewPersistence */ = {
 			isa = PBXGroup;
 			children = (
+				48E70C862174E6D9006CB873 /* TestAccessoryViewPersistence.entitlements */,
 				48E70C552174D023006CB873 /* AppDelegate.swift */,
 				48E70C572174D023006CB873 /* MasterViewController.swift */,
 				48E70C592174D023006CB873 /* DetailViewController.swift */,
@@ -196,6 +198,14 @@
 				TargetAttributes = {
 					48E70C512174D023006CB873 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					48E70C672174D024006CB873 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -435,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z7UYP6FP8;
 				INFOPLIST_FILE = TestAccessoryViewPersistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z7UYP6FP8;
 				INFOPLIST_FILE = TestAccessoryViewPersistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
